@@ -1,0 +1,28 @@
+@keyframes progressBarAnimation {
+    from {
+      width: 0%;
+    }
+    to {
+      width: var(--progress-width);
+    }
+  }
+  
+  .progress-bar {
+    animation: progressBarAnimation 2s ease-in-out forwards;
+  } 
+
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.7s ease-in-out forwards;
+  }
+  
+  

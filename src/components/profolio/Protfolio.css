@@ -1,0 +1,9 @@
+/* TEXT Ggradient*/
+.gradient-text {
+    background-image: linear-gradient(40deg,  #FFDD67 0%, #FF014F 10%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+/* TEXT Ggradient*/
