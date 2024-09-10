@@ -8,7 +8,7 @@ import {ReactTyped} from "react-typed"; // Remove curly braces around ReactTyped
 const HeroSection = () => {
   return (
     <div className="container">
-      <div className="heroSection px-4 grid lg:grid-cols-[50%_50%]  lg:mt-[300px] sm:mt-[150px] xxxsm:mt-[150px]   ">
+      <div className="heroSection px-4 grid lg:grid-cols-[50%_50%]  lg:mt-[100px] sm:mt-[150px] xxxsm:mt-[150px]   ">
         <div className="leftArea  text-center flex flex-col gap-8 sm:mb-20   justify-center">
           <h1 className="flex lg:justify-start xxxsm:justify-center sm:text-5xl xsm:text-4xl  text-white xl:text-5xl lg:text-4xl xxsm:text-2xl xxxsm:text-xl  gap-3">
             Hey{" "}
@@ -41,7 +41,7 @@ const HeroSection = () => {
 
         <div className="imgArea mb-10 lg:mb-0 flex xxxsm:mt-10">
           <img
-            className="w-8/12 md:w-8/12 md:translate-x-5 mx-auto lg:w-10/12"
+            className="w-8/12 md:w-8/12 md:translate-x-5 mx-auto lg:w-10/12 z-0"
             src={banner}
             alt="Banner"
           />

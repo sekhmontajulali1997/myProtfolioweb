@@ -52,8 +52,8 @@ const ProtfolioSection = () => {
 
   return (
     <>
-      <div className="container py-36">
-        <div className="parentDiv w-[90%] m-auto px-20">
+      <div className="xl:container lg:py-28 sm:py-20 xxxsm:py-16">
+        <div className="parentDiv w-[90%] m-auto xl:px-20">
           <div className="iconArea ">
             <div className="icon relative">
               <img
@@ -67,23 +67,23 @@ const ProtfolioSection = () => {
             </h1>
           </div>
 
-          <div className="contentArea grid grid-cols-[40%_60%]">
+          <div className="contentArea grid gap-8 sm:grid-cols-[50%_40%]">
             <div className="leftContent ">
-              <h1 className=" text-4xl text-white font-bold">
+              <h1 className=" lg:text-4xl md:text-3xl sm:text-2xl xxsm:text-4xl xxxsm:text-xl text-white xxxsm:font-semibold md:font-bold">
                 Look at my portfolio and give me your feedback
               </h1>
             </div>
-            <div className="rightContent col-span-[60%] flex gap-10">
+            <div className="rightContent col-span-[60%] flex lg:gap-10 xxxsm:gap-4">
               <div className="counterLeft">
-                <h1 className="text-white text-5xl font-bold">276K</h1>
-                <h1 className="text-white text-xl font-semibold mt-2">
+                <h1 className="text-white lg:text-4xl md:text-4xl sm:text-3xl xxsm:text-5xl xxxsm:text-3xl font-bold">27+</h1>
+                <h1 className="text-white lg:text-2xl md:text-2xl sm:text-xl xxsm:text-xl xxxsm:text-xl font-semibold mt-2">
                   Completed Project
                 </h1>
               </div>
               <div className="w-[2px] h-20 bg-white"></div>
               <div className="counterRight">
-                <h1 className="text-white text-5xl font-bold">94%</h1>
-                <h1 className="text-white text-xl font-semibold mt-2">
+                <h1 className="text-white lg:text-4xl md:text-3xl sm:text-3xl xxsm:text-5xl xxxsm:text-3xl font-bold">94%</h1>
+                <h1 className="text-white lg:text-2xl md:text-2xl sm:text-xl xxsm:text-xl xxxsm:text-xl font-semibold mt-2">
                   Positive Rating
                 </h1>
               </div>

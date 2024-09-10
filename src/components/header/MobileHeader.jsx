@@ -8,7 +8,7 @@ const MobileHeader = () => {
   return (
     <>
       
-        <div className="mobileHeader  sm:px-20 xxsm:px-6 xxxsm:px-3  py-6 fixed w-full bg-white ">
+        <div className="mobileHeader  sm:px-20 xxsm:px-6 xxxsm:px-3 z-10 py-6 fixed w-full bg-white ">
           <div className="parentDiv grid grid-cols-[40%_60%]">
             <div className="leftSide relative">
               <div className="icon">

@@ -1,8 +1,6 @@
 import { useState } from "react";
-//import mern from "../../assets/mern.png";
-import "./SkillSection.css";
 
-const SkillSection = () => {
+const MobileskillSection = () => {
   const [bio, setBio] = useState(true);
   const [skill, setSkill] = useState(false);
   const [education, setEducation] = useState(false);
@@ -26,57 +24,57 @@ const SkillSection = () => {
         setBio(true);
     }
   };
-
   return (
     <>
-      <div className="container my-24">
-        <div className="fakeDiv py-10 w-[90%] m-auto xl:px-20">
-          <div className="skillSection w-[90%] m-auto xl:px-20 relative">
-            <div className="topArea absolute 2xl:w-[88%]   lg:-top-9 lg:left-[6%]   m-auto">
-              <div className="buttonArea grid lg:grid-cols-3 bg-[#012b45] py-1 px-1 border-[1px] border-[#ffffff6b] rounded-[80px]">
-                <button
-                  onClick={() => handleClick("bio")}
-                  className={`${
-                    bio
-                      ? "text-white xl:w-[260px] lg:w-[200px]  bg-[#FF014F] lg:py-3 sm:py-1 rounded-[80px] font-medium xl:text-xl  sm:text-sm xxxsm:text-xs"
-                      : "text-white xl:w-[260px]  lg:w-[200px] transition duration-500 ease-in-out hover:bg-[#FF014F] lg:py-3 sm:py-1 rounded-[80px] font-medium xl:text-xl sm:text-sm xxxsm:text-xs"
-                  }`}
-                >
-                  BIOGRAPHY
-                  <span className="inline-block w-[40px] h-[2px] bg-white mx-2 -translate-y-1"></span>
-                  <span className="lg:text-xl font-bold xxxsm:text-xs">01</span>
-                </button>
-                <button
-                  onClick={() => handleClick("skill")}
-                  className={`${
-                    skill
-                      ? "text-white xl:w-[260px] lg:w-[200px] bg-[#FF014F] lg:py-3 rounded-[80px] font-medium xl:text-xl sm:text-sm xxxsm:text-xs"
-                      : "text-white xl:w-[260px] lg:w-[200px] transition duration-500 ease-in-out hover:bg-[#FF014F] lg:py-3 rounded-[80px] font-medium xl:text-xl sm:text-sm xxxsm:text-xs"
-                  }`}
-                >
-                  SKILLS
-                  <span className="inline-block w-[40px]  h-[2px] bg-white mx-2 -translate-y-1"></span>
-                  <span className="lg:text-xl font-bold">02</span>
-                </button>
-                <button
-                  onClick={() => handleClick("education")}
-                  className={`${
-                    education
-                      ? "text-white xl:w-[260px] lg:w-[200px] bg-[#FF014F] py-3 rounded-[80px] font-medium xl:text-xl sm:text-sm xxxsm:text-xs"
-                      : "text-white xl:w-[260px] lg:w-[200px] transition duration-500 ease-in-out hover:bg-[#FF014F] py-3 rounded-[80px] font-medium xl:text-xl sm:text-sm xxxsm:text-xs"
-                  }`}
-                >
-                  EDUCATION
-                  <span className="inline-block w-[40px]  h-[2px] bg-white mx-2 -translate-y-1"></span>
-                  <span className="lg:text-xl font-bold">03</span>
-                </button>
-              </div>
-            </div>
+      <div className="container">
+        <div className="buttonArea py-10 flex flex-col items-center gap-5">
+          <div className="bioBtn">
+            <button
+              onClick={() => handleClick("bio")}
+              className={`${
+                bio
+                  ? "text-white xxxsm:w-[300px]   bg-[#FF014F] py-3 rounded-[80px] font-medium  xxsm:text-xl sm:text-sm xxxsm:text-xl"
+                  : "text-white  xxxsm:w-[300px]   transition duration-500 ease-in-out hover:bg-[#FF014F] py-3  rounded-[80px] font-medium xxsm:text-xl  sm:text-sm xxxsm:text-xl"
+              }`}
+            >
+              BIOGRAPHY
+              <span className="inline-block w-[40px] h-[2px] bg-white mx-2 -translate-y-1"></span>
+              <span className="lg:text-xl font-bold xxxsm:text-xs">01</span>
+            </button>
           </div>
-
-          <div className="contentArea border-[1px] border-[#ffffff6b] py-16  bg-[rgba(0,0,0,.1)!important]  xsm:w-[100%] m-auto">
+          <div className="skillBtn">
+            <button
+              onClick={() => handleClick("skill")}
+              className={`${
+                skill
+                  ? "text-white  xxxsm:w-[300px]   bg-[#FF014F] py-3 px-3 rounded-[80px] font-medium xxsm:text-xl sm:text-sm xxxsm:text-xs"
+                  : "text-white  xxxsm:w-[300px]  transition duration-500 ease-in-out hover:bg-[#FF014F] py-3 rounded-[80px] font-medium xxsm:text-xl sm:text-sm xxxsm:text-xs"
+              }`}
+            >
+              SKILLS
+              <span className="inline-block w-[40px]  h-[2px] bg-white mx-2 -translate-y-1"></span>
+              <span className="lg:text-xl font-bold">02</span>
+            </button>
+          </div>
+          <div className="educationBtn">
+            <button
+              onClick={() => handleClick("education")}
+              className={`${
+                education
+                  ? "text-white  xxxsm:w-[300px]   bg-[#FF014F] py-3 rounded-[80px] font-medium xxsm:text-xl sm:text-sm xxxsm:text-xs"
+                  : "text-white  xxxsm:w-[300px]   transition duration-500 ease-in-out hover:bg-[#FF014F] py-3 rounded-[80px] font-medium xxsm:text-xl sm:text-sm xxxsm:text-xs"
+              }`}
+            >
+              EDUCATION
+              <span className="inline-block w-[40px]  h-[2px] bg-white mx-2 -translate-y-1"></span>
+              <span className="lg:text-xl font-bold">03</span>
+            </button>
+          </div>
+        </div>
+       
+        <div className="contentArea border-[1px] border-[#ffffff6b] py-16  bg-[rgba(0,0,0,.1)!important]  xsm:w-[100%] m-auto">
             {bio && (
-              <div className="bio px-10  grid sm:grid-cols-2 gap-10  animate-fadeIn ">
+              <div className="bio px-2  grid sm:grid-cols-2 gap-10  animate-fadeIn ">
                 <div className="leftSide">
                   <div className="name flex border-b-[1px] border-[#ffffff6b] justify-between  py-2">
                     <h1 className="text-white sm:text-xl">Name</h1>
@@ -223,10 +221,12 @@ const SkillSection = () => {
               </div>
             )}
           </div>
-        </div>
+
+
+        
       </div>
     </>
   );
 };
 
-export default SkillSection;
+export default MobileskillSection;
